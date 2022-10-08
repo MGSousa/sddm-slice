@@ -123,7 +123,7 @@ Item
             hoverEnabled: true
             width: parent.width
             height: pageRoot.height / 4
-            //enabled: !hasLoginShown
+            enabled: !hasLoginShown
 
             onClicked: { (hasLoginShown ? back_to_selection() : select_or_login()) } 
 
@@ -382,22 +382,6 @@ Item
                 text: localeText.login
 
                 onClicked: select_or_login()
-
-                font: fonts.slicesLoginButtons
-            }
-
-            SlicedButton
-            {
-                id: buttonUserBack
-                x: userListContainer.width - widthFull - buttonUserLogin.widthPartial - 3
-                y: buttonUserLogin.y
-                paddingTop: 2
-                opacity: hasLoginShown ? 1 : 0
-                visible: !manual
-
-                text: qsTr("Back")
-
-                onClicked: back_to_selection()
 
                 font: fonts.slicesLoginButtons
             }

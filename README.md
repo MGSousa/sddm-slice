@@ -12,7 +12,7 @@ If you're using KDE, you can install theme from `System Settings > Startup and S
 
 1. Install `Qt Graphical Effects` QML module
 2. Install Roboto font (optional, you can change to other font, [see below](#font-scheme))
-3. `git clone https://github.com/RadRussianRus/sddm-slice.git`
+3. `git clone https://github.com/MGSousa/sddm-slice.git`
 4. `cp -r sddm-slice /usr/share/sddm/themes/sddm-slice`
 5. Open `/etc/sddm.conf` and put `Current=sddm-slice` in `[Theme]` section
 
